@@ -20,7 +20,7 @@ public class LoadDriver {
 	static Connection getDBConnection() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/mydb", "root", "mynewpassword");
+			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/mydb", "root", "password"); // Enter password here
 			
 			p("[Success connecting to SQL]");
 
